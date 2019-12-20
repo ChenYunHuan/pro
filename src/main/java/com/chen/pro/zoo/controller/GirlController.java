@@ -18,4 +18,9 @@ public class GirlController {
     public List<Girl> findAll(){
         return igirlMapper.queryAll();
     }
+
+    @RequestMapping("jsp")
+    public String index(){
+        return "index";
+    }
 }

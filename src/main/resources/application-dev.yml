@@ -15,6 +15,11 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /
+    static-path-pattern: /**
 mybatis:
   type-aliases-package: com.chen.pro.zoo.entity
   config-locations: classpath:mybatis/mybatis-config.xml
